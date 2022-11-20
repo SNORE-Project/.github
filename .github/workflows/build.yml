@@ -24,8 +24,7 @@ jobs:
           npm install
       - name: pxt
         run: |
-          pxt target microbit
+          pxt target microbit 5.0.12
           pxt install
-          npm i pxt-microbit@5.0.12
           pxt build
           pxt test
