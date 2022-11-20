@@ -1,11 +1,7 @@
-name: CI
+name: pxt CI
 
 on:
-  push:
-    branches: [main]
-    paths-ignore: ["**.md", ".vscode/**", "docs/**", ".github/workflows/pages.yml"]
-  pull_request:
-    branches: [main]
+  workflow_call:
     
 jobs:
   test:
